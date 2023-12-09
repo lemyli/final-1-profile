@@ -1,0 +1,22 @@
+from queue import PriorityQueue
+
+# create pq
+my_priority_queue = PriorityQueue()
+
+# object
+priority_queue_object = my_priority_queue
+
+# elements
+priority_queue_object.put((3, "Priority 3 Element"))
+priority_queue_object.put((1, "Priority 1 Element"))
+priority_queue_object.put((2, "Priority 2 Element"))
+
+# pop elements from pq
+element_popped_1 = priority_queue_object.get()
+element_popped_2 = priority_queue_object.get()
+element_popped_3 = priority_queue_object.get()
+
+# show output
+print(f"Element popped from the priority queue: {element_popped_1}")
+print(f"Element popped from the priority queue: {element_popped_2}")
+print(f"Element popped from the priority queue: {element_popped_3}")
