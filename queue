@@ -1,0 +1,18 @@
+from queue import Queue
+
+# create q
+my_queue = Queue()
+
+# object
+queue_object = my_queue
+
+# element
+element_to_add = "Hello, Queue!"
+queue_object.put(element_to_add)
+
+# pop an element
+element_popped = queue_object.get()
+
+# show output
+print(f"Element added to the queue: {element_to_add}")
+print(f"Element popped from the queue: {element_popped}")
